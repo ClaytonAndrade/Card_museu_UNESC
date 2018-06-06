@@ -1,14 +1,12 @@
-*{
-    margin-top: 10px;
-}
-.card {
+
+.card_museu {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
     margin: auto;
     text-align: center;
 }
 
-.title {
+.title_museu {
     color: grey;
     font-size: 18px;
 }
@@ -24,6 +22,7 @@ button {
     cursor: pointer;
     width: 100%;
     font-size: 18px;
+    margin-top: 10px;
 }
 
 a {
@@ -34,11 +33,11 @@ a {
     
 }
 
-button{
-    margin-top: 10px;
-}
-
 button:hover, a:hover {
     opacity: 0.7;
     
+}
+
+#error-404{
+    margin-top: 10px;
 }

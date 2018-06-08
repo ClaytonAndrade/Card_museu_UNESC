@@ -17,5 +17,9 @@ class ModelsAnimais{
 			$stmt -> execute();
 
 			return $stmt -> fetch();
-    }
+
+			$stmt -> close();
+
+			$stmt = null;
+    }	
 }

@@ -1,7 +1,7 @@
 <?php
 
 class ControllerCards{
-    static public function ctrlCards(){
+    public function ctrlCards(){
 
         if(isset($_POST["ingAnimal"])){
 
@@ -16,6 +16,7 @@ class ControllerCards{
                 if($resposta["id_animal"] == $_POST["ingAnimal"]){
 
                     $_SESSION["startSession"] = "ok";
+                    $_SESSION["id"] = $valor;
                     echo '<script>window.location = "cards";</script>';
 
                 }else{
@@ -23,6 +24,17 @@ class ControllerCards{
                 }
             }    
         }
+    }
+
+    public function ctrlMostrarCards($id){
+
+        $tabela = "animais";
+        $item = "id_animal";
+        
+        $resposta = ModelsAnimais::mdlMostrarAnimal($tabela, $item, $id);
+            
+        return  $resposta;            
+        
     }
 }
         

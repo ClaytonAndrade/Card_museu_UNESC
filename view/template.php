@@ -91,7 +91,8 @@
     if(isset($_GET["rota"])){
 
       if($_GET["rota"] == "cards"||
-         $_GET["rota"] == "qrcode"){
+         $_GET["rota"] == "qrcode"||
+         $_GET["rota"] == "sair"){
         include "modulos/".$_GET["rota"].".php";
       }else{
         include "modulos/404.php";

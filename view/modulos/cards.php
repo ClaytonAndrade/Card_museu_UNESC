@@ -13,7 +13,7 @@ echo '<div class="card_museu">
         <a href="#"><i class="fa fa-play"></i></a> 
         <p>
           <button type="submit">
-            <a href="qrcode" style="color:white;">Click aqui para ler o Próximo</a>
+            <a href="sair" style="color:white;">Click aqui para ler o Próximo</a>
           </button>
         </p>
     </div>'
